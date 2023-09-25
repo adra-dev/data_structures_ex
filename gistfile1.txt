@@ -1,0 +1,27 @@
+- Suma de listas: Escribe una función que tome dos listas como entrada y devuelva una nueva lista que contenga la suma de los elementos correspondientes de ambas listas.
+
+- Número máximo y mínimo: Escribe una función que tome una lista de números como entrada y devuelva el número máximo y mínimo de la lista.
+
+- Eliminar duplicados: Escribe una función que tome una lista como entrada y devuelva una nueva lista sin elementos duplicados.
+
+- Palabras más largas: Escribe una función que tome una lista de palabras como entrada y devuelva una tupla, de un solo elemento, con las palabras más largas de la lista.
+
+- Invertir lista: Escribe una función que tome una lista como entrada y devuelva una nueva lista con los elementos en orden inverso.
+
+- Media y mediana: Escribe una función que tome una tupla de números como entrada y devuelva la media y la mediana de los números.
+
+- Estadísticas descriptivas: Escribe una función que tome una tupla de números como entrada y devuelva un diccionario con la media, la mediana y el rango de los números.
+
+- Conteo de elementos: Escribe una función que tome una tupla de elementos y devuelva un diccionario con la cantidad de veces que aparece cada elemento en la tupla.
+    
+- Ordenar tuplas: Escribe una función que tome una lista de tuplas, donde cada tupla contiene un nombre y una puntuación, y devuelva la lista ordenada por la puntuación de mayor a menor.
+    
+- Ordenar tuplas: Escribe una función que tome una lista de tuplas, donde cada tupla contiene un nombre y una puntuación, y devuelva la lista ordenada por la puntuación de mayor a menor.
+    
+- Ordenar tuplas: Escribe una función que tome una lista de tuplas, donde cada tupla contiene un nombre y una puntuación, y devuelva la lista ordenada por la puntuación de mayor a menor.
+    
+- Filtrar datos: Escribe una función que tome una lista de tuplas, donde cada tupla contiene el nombre de un producto y su precio, y devuelva una nueva lista con los productos cuyo precio sea inferior a un valor dado.
+    
+- Combinar tuplas: Escribe una función que tome dos tuplas de números como entrada y devuelva una nueva tupla que contenga la suma de los elementos correspondientes de ambas tuplas.
+
+- Frecuencia de letras: Escribe una función que tome una cadena como entrada y devuelva un diccionario con la frecuencia de cada letra en la cadena, utilizando una tupla para representar cada par letra-frecuencia.
