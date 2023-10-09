@@ -90,20 +90,33 @@ def describe(elements):
     return result
 
 
-def cnt():
+import random 
+
+def cnt(elements):
     """Escribe una función que tome una tupla de elementos y devuelva
       un diccionario con la cantidad de veces que aparece cada 
       elemento en la tupla."""
+    
+    result = {}
+    
+    for element in elements:
+        count = elements.count(element)
+        key = str(element)
+        result[key] = count
+
+    return result
+        
 
 
 #collection_a = ['a', 'ab', 'abc', 'cody', 'codigofacilito']
 #collection_b = [10, 20, 30]
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-c = [1, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+c = [1, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 6, 6, 6, 6]
 b = a[::-1]
+d = [ random.randint(1,100) for x in range(0,100)]
 
 print(
-   describe(c)
+   cnt(d)
 )
 # result = order(collection_a)
 # print(result)
