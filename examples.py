@@ -105,18 +105,93 @@ def cnt(elements):
     #     result[key] = count
 
     return result
+
+
+def sort_tuples(elements):
+    """Escribe una función que tome una lista de tuplas, donde cada 
+    tupla contiene un nombre y una puntuación, y devuelva la lista 
+    ordenada por la puntuación de mayor a menor."""
+
+    elements.sort(reverse=True, key=lambda x: x[1])
+
+    sorted_elements = elements.copy()
+    #sorted_elements = elements[::] 
+
+    return sorted_elements
+
+
+def filter(elements,range=6.0):
+    """Escribe una función que tome una lista de tuplas, donde cada 
+    tupla contiene el nombre de un producto y su precio, y devuelva 
+    una nueva lista con los productos cuyo precio sea inferior a un 
+    valor dado."""
+
+    result = []
+
+    for nombre, precio in elements:
+        if precio < range:
+            tuple = (nombre,precio)
+            result.append(tuple)
+    
+    return result
+
+
+def sum_tuples(collection_a, collection_b):
+    """Escribe una función que tome dos tuplas de números como entrada
+    y devuelva una nueva tupla que contenga la suma de los elementos
+    correspondientes de ambas tuplas."""
+
+    result = []
+
+    if len(collection_a) != len(collection_b):
+        return False
+
+    for i in range(0, len(collection_a)):
+        result.append(collection_a[i] + collection_b[i])
+
+    result = tuple(result)
+
+    return result 
         
+
+
+def word_frec(string):
+    """Frecuencia de letras: Escribe una función que tome una cadena 
+    como entrada y devuelva un diccionario con la frecuencia de cada
+    letra en la cadena, utilizando una tupla para representar cada 
+    par letra-frecuencia."""
+
+    result = []
+
+    l = list(string)
+
+    for char in l:
+        apears = l.count(char)
+        tuple = (char, apears)
+        result.append(tuple)
+
+    result = dict(result)
+    return result
+
+
+
+
 
 
 #collection_a = ['a', 'ab', 'abc', 'cody', 'codigofacilito']
 #collection_b = [10, 20, 30]
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-c = [1, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 6, 6, 6, 6]
+a = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+a1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+c = (1, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 6, 6, 6, 6)
 b = a[::-1]
 d = [ random.randint(1,100) for x in range(0,100)]
+e = [('Eduardo', 5.8), ('Badia', 6.6), ('Borre', 7.8), ('Moure', 10.0), ('Adrian', 3.3)]
+f = tuple(random.randint(1,100) for x in range(0,10))
+g = tuple(random.randint(1,100) for x in range(0,10)) 
+
 
 print(
-   cnt(d)
+   word_frec('MamamiaFrecuencia de letras: Escribe una función que tome una cadena como entrada y devuelva un')
 )
 # result = order(collection_a)
 # print(result)
