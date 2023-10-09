@@ -97,12 +97,12 @@ def cnt(elements):
       un diccionario con la cantidad de veces que aparece cada 
       elemento en la tupla."""
     
-    result = {}
+    result = {element:elements.count(element) for element in elements}
     
-    for element in elements:
-        count = elements.count(element)
-        key = str(element)
-        result[key] = count
+    # for element in elements:
+    #     count = elements.count(element)
+    #     key = str(element)
+    #     result[key] = count
 
     return result
         
